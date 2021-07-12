@@ -2,7 +2,7 @@
 App Voto
 </h1>
 
-#Sobre
+# Sobre
 
 Esse projeto esta sendo desenvolvido em meio ao desafio proposto. A principio usando nodejs e react.
 
@@ -22,9 +22,9 @@ $ yarn dev
 # Como executar o frontend
 ```bash
 
-$yarn install
+$ yarn install
 
-$yarn start
+$ yarn start
 ```
 
 <h3>Desenvolvido por Lucas T.A</h3>
