@@ -1,7 +1,7 @@
 import { verify } from 'jsonwebtoken';
 
 export default async(required, response, next)=>{
-    const authHeader = request.headrs.authorization;
+    const authHeader = request.headers.authorization;
     if(!authHeader){
         return response.status(401).json({ error: "User not authorizeted!"});
     }
