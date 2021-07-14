@@ -1,13 +1,31 @@
 import React, { useEffect, useState } from "react";
 
-import api from "../../services/api";
+//import api from "../../services/api";
 
 import "./styles.css";
 
 
+const displayEmojiName = event => alert(event.target.id);
+const emojis = [
+  {
+    emoji: '😀',
+    name: "Teste a escolha!"
+  },
+  {
+    emoji: '🎉',
+    name: "Acerte a resposta!"
+  },
+  {
+    emoji: '💃',
+    name: "Acerte o maior numero de respostas em menor tempo!"
+  }
+];
+
+
+
 export default function Home(){
 
-    const [usuarios, setUsuarios] = useState([]);
+ /*   const [usuarios, setUsuarios] = useState([]);
 
     useEffect(() => {
         const token = localStorage.getItem("@token:voto");
@@ -23,28 +41,25 @@ export default function Home(){
         }
     }, []);
 
-    return (
-        <div className="container">
-            <h3>Usuários Cadastrados</h3>   
-            <table> 
-            
-                <thead> 
-                        <th>Email</th>
-                        <th>Nome</th>
-                        <th>Username</th>
-                </thead>
-                <tbody>  
-                    {usuarios.map((usuario) => {
-                        return (
-                    <tr key={usuario._id}>
-                        <td>{usuario.name}</td>
-                        <td>{usuario.email}</td>                        
-                        <td>{usuario.username}</td>
-                    </tr>
-                        );
-                    })}
-                </tbody>
-            </table>
-        </div>
-    );
-}
+    */
+    const greeting = "greeting";
+    return(
+      <div className="container">
+        <h1 id={greeting}>Questionario Simples</h1>
+        <p></p>
+        <ul>
+          {
+            emojis.map(emoji => (
+              <li key={emoji.name}>
+                <button
+                  onClick={displayEmojiName}
+                >
+                  <span role="img" aria-label={emoji.name} id={emoji.name}>{emoji.emoji}</span>
+                </button>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    )
+  }
