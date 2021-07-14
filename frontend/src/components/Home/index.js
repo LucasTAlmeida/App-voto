@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 //import api from "../../services/api";
 
@@ -25,28 +25,12 @@ const emojis = [
 
 export default function Home(){
 
- /*   const [usuarios, setUsuarios] = useState([]);
 
-    useEffect(() => {
-        const token = localStorage.getItem("@token:voto");
-        console.log(token);
-        if (token) {
-            api
-                .get("/users", {
-                  headers: {
-                    Authorization:`Bearer ${token}`,
-                },
-            })
-            .then((response) => setUsuarios(response.data));
-        }
-    }, []);
-
-    */
     const greeting = "greeting";
     return(
       <div className="container">
         <h1 id={greeting}>Questionario Simples</h1>
-        <p></p>
+        <p>Registre-se e faça o login para jogar!</p>
         <ul>
           {
             emojis.map(emoji => (
