@@ -4,9 +4,10 @@ App Voto
 
 # Sobre
 
-Esse projeto esta sendo desenvolvido em meio ao desafio proposto. A principio usando nodejs e react.
+A principio usando nodejs e react. Projeto de um questionário no qual você pode ver o seu número de acertos no final!
 
-# Ferramentas Utilizadas
+
+# Ferramentas Utilizadas na parte backend
 
 -[Express]          -[React]
 -[Jasonwebtoken]    
