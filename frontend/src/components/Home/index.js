@@ -1,8 +1,6 @@
 import React from "react";
 
-//import api from "../../services/api";
-
-import "./styles.css";
+import "./home.css";
 
 
 const displayEmojiName = event => alert(event.target.id);
@@ -25,10 +23,9 @@ const emojis = [
 
 export default function Home(){
 
-
     const greeting = "greeting";
     return(
-      <div className="container">
+      <div className="container7">
         <h1 id={greeting}>Questionario Simples</h1>
         <p>Registre-se e faça o login para jogar!</p>
         <ul>
