@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 
-import "./styles.css";
+import "./login.css";
 
 import { AuthContext } from "../context/AuthContext";
 
@@ -26,7 +26,7 @@ function Login() {
   }
 
   return (
-    <div className="container">
+    <div className="container5">
       <form onSubmit={handleSubmit}>
         <h2>Login</h2>
 
