@@ -32,11 +32,11 @@ function Login() {
 
         <div className="row">
           <span>Username</span>
-          <input type="text" name="username" onChange={handleChange} />
+          <input type="text" name="username" onChange={handleChange} id ="username" required/>
         </div>
         <div className="row">
           <span>Password</span>
-          <input type="password" name="password" onChange={handleChange} />
+          <input type="password" name="password" onChange={handleChange} id ="password" required />
         </div>
 
         <div className="row">
