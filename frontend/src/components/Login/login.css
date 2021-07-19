@@ -52,6 +52,7 @@
 .container5 form .row input {
   height: 40px;
   width: 100%;
+  color: black;
   outline: none;
   padding: 10px;
   font-size: 15px;
